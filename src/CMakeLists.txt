@@ -36,3 +36,6 @@ add_library(xwebsockets
 if (APPLE)
 add_dependencies(xwebsockets libuv_install)
 endif()
+
+set(XWEBSOCKET_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src)
+set(XWEBSOCKET_LIBRARIES xwebsockets)
